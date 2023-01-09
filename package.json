@@ -1,6 +1,6 @@
 {
   "name": "nano-event-bus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tiny event bus based on custom events",
   "main": "build/umd/nano-bus.umd.js",
   "module": "build/es/index.js",
