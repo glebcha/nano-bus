@@ -1,7 +1,7 @@
 {
     "names": {
-        "lib": "nano-bus",
-        "global": "NanoBus"
+        "lib": "nano-event-bus",
+        "global": "NanoEventBus"
     },
     "paths": {
         "input": "src/index.ts",
