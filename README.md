@@ -1,8 +1,8 @@
 <img width="200px" src="microbus.png" />
 
-# [nano-bus](https://glebcha.github.io/nano-bus/)
+# [nano-event-bus](https://glebcha.github.io/nano-event-bus/)
 
-[![npm version](https://badge.fury.io/js/nano-bus.svg)](https://badge.fury.io/js/nano-bus)
+[![npm version](https://badge.fury.io/js/nano-event-bus.svg)](https://badge.fury.io/js/nano-event-bus)
 
 ### Tiny event bus based on custom events (for now only in browser)
 <br />
