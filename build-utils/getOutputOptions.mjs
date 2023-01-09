@@ -3,11 +3,20 @@ import path from 'path';
 export function getOutputOptions({ moduleType, version, names, paths }) {
   const isESM = moduleType === 'es';
   const footer = `
-  if (globalThis.ExtendedFetch ) {
-    globalThis.ExtendedFetch.version = '${version}';
+  if (globalThis.NanoEventBus ) {
+    globalThis.NanoEventBus.version = '${version}';
   } else {
-    globalThis.ExtendedFetch = {version: '${version}'};
+    globalThis.NanoEventBus = {version: '${version}'};
   }
+
+  Object.defineProperty(globalThis, 'NanoEventBus',  {
+    writable: false,
+    configurable: false
+  });
+  Object.defineProperty(globalThis.NanoEventBus, 'EventBus',  {
+    writable: false,
+    configurable: false
+  });
   `;
 
   const output = Object.assign(
