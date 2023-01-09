@@ -59,7 +59,7 @@ bus.emit('add');
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nano-event-bus/build/umd/nano-event-bus.umd.js"></script>
 
 <body>
-  <script type="text/javascript">console.log(window.EventBus);</script>
+  <script type="text/javascript">console.log(window.NanoEventBus.EventBus);</script>
 </body>
 ```
 
