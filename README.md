@@ -4,7 +4,7 @@
 
 [![npm version](https://badge.fury.io/js/nano-event-bus.svg)](https://badge.fury.io/js/nano-event-bus)
 
-### Tiny event bus based on custom events (for now only in browser)
+Tiny event bus based on custom events (for now only in browser)
 <br />
 <br />
 
@@ -40,7 +40,7 @@ Emit event with defined type and pass optional data (any object)
 
 ### Sample usage:
 
-```
+```javascript
 import { EventBus } from 'nano-bus';
 
 const bus = new EventBus();
@@ -51,4 +51,30 @@ function addCallback(event) {
 
 bus.on('add', addCallback);
 bus.emit('add');
+```
+
+### Use with JSDelivr CDN:
+
+```
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nano-event-bus/build/umd/nano-event-bus.umd.js"></script>
+
+<body>
+  <script type="text/javascript">console.log(window.EventBus);</script>
+</body>
+```
+
+### Use ES-module with Skypack CDN:
+
+```
+<script type="module">
+  import { EventBus } from 'https://cdn.skypack.dev/nano-event-bus';
+
+  Object.defineProperty(window, 'EventBus',  {
+    value: Object.freeze(new EventBus()),
+    writable: false,
+    configurable: false
+  });
+  
+  console.log(window.EventBus)
+</script>
 ```
