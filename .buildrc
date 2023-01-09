@@ -1,0 +1,10 @@
+{
+    "names": {
+        "lib": "nano-bus",
+        "global": "NanoBus"
+    },
+    "paths": {
+        "input": "src/index.ts",
+        "output": "build"
+    }
+}

@@ -1,0 +1,26 @@
+{
+ "compilerOptions": {
+   "baseUrl":".",
+   "target":"ES2017",
+   "allowJs": true,
+   "sourceMap": true,
+   "strict": true,
+   "downlevelIteration": true,
+   "noUnusedParameters": true,
+   "noUnusedLocals": true,
+   "noImplicitReturns": true,
+   "esModuleInterop": true,
+   "resolveJsonModule": true,
+   "moduleResolution":"node",
+   "allowSyntheticDefaultImports": true,
+   "outDir":"./build",
+   "lib": [
+     "DOM",
+     "ES2017",
+     "ES2018",
+     "ESNext"
+    ],
+  },
+ "include": ["src"],
+ "exclude": ["node_modules/*","build/*" ],
+}
